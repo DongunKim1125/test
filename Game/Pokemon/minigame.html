@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="minigame.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="../../index.html">
+                    <img id= mainLogo src="../../media/nintendo_logo.png">
+                </a>
+            </div>
+            <nav>
+                <ul id="topMenu">
+                <li><a href="../Mario/history.html"><span>슈퍼마리오</span></a>
+                    <ul>
+                        <li><a href="../Mario/history.html">슈퍼마리오의 역사</a></li>
+                        <li><a href="../Mario/world.html">슈퍼마리오 파생작</a></li>
+                    </ul>
+                </li>
+                <li><a href="history.html"><span>포켓몬스터</span></a>
+                    <ul>
+                        <li><a href="history.html">포켓몬의 역사</a></li>
+                        <li><a href="minigame.html">포켓몬 미니게임 체험</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Splatoon/history.html"><span>스플래툰</span></a>
+                    <ul>
+                        <li><a href="../Splatoon/history.html">스플래툰의 역사</a></li>
+                        <li><a href="../Splatoon/world.html">스플래툰 세계</a></li>
+                    </ul>
+                </li>
+                <li><a href="../AnimalCrossing/history.html"><span>동물의 숲</span></a>
+                    <ul>
+                        <li><a href="../AnimalCrossing/history.html">동물의 숲의 역사</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://store.nintendo.co.kr/games"><span>게임 구매</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="margin"></div>
+        <div id="alt_div"><span id="alt">앗! 라이벌이 Lv.8 파이리로 승부를 걸어왔다! 내 차례에 어떤 포켓몬을 내보낼까?</span></div>
+
+        <form>
+            <input type="radio" name="pokemon" value="파이리" onclick="battle(event)">
+            Lv.6 파이리<img src="../../media/fire.jpg">
+            <input type="radio" name="pokemon" value="꼬부기" onclick="battle(event)">
+            Lv.6 꼬부기<img src="../../media/water.jpg">
+            <input type="radio" name="pokemon" value="이상해씨" onclick="battle(event)">
+            Lv.6 이상해씨<img src="../../media/leaf.jpeg">
+        </form>
+        <div id="margin"></div>
+        <div id="result"></div>
+        <div id="question"></div>
+        <div id="attacking" style="display:none">
+            <form>
+                <input type="radio" name="attack" value="몸통박치기" onclick="final_battle(event)">
+                몸통박치기
+                <input type="radio" name="attack" value="속성공격" onclick="final_battle(event)">
+                속성공격
+            </form>
+        </div>
+        <div id="result2"></div>
+
+       
+
+    </div>
+    <div id="margin"></div>
+</body>
+
+<footer>
+    강원대학교 컴퓨터공학과 202013080 김동언<br>anmae034@gmail.com
+</footer>
+
+</html>
